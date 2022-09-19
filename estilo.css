@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing:border-box;
+}
+
+
+.img{
+    transform: translate(368deg);
+}
+.marketing:hover{
+    color:rgb(127, 255, 212);
+   
+}
+.img:hover{
+    scale: (0.5, 0.5);
+    transition: all 3s ease;
+}
+
+.img{
+    width: 100%;
+    max-width: 400px;
+    border: 2px double;
+    background-color: aliceblue;
+}
+a:link {
+    text-decoration: none;  
+}
+
+a :hover{
+    color:rgb(255, 228, 196);
+
+}
+.container text-center{
+    text-align: center;
+}
+
+/*---inicio container--*/
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+/*inicio MQ*/
+@media only screen and (max-width: 768px) {
+    scroll-behavior: smooth;
+
+    grid-template-columns:4fr;
+    grid-template-row:4fr;
+}
+
+
+/*fin MQ*/
